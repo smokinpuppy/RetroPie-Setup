@@ -6,7 +6,7 @@ General Usage
 
 Shell script to setup Raspberry Pi (TM) with several emulators, various cores, and EmulationStation as graphical front end.
 
-This script is tested with the Raspbian distribution, but users have reported that it also works with RaspBMC. Before using the script, please **make sure that you have run the raspi-config script to extend your root file system and that your memory split is set to 192 or 128**. You can run the script with
+This script is tested with the Raspbian distribution, but users have reported that it also works with RaspBMC. Before using the script, please **make sure that you have run the raspi-config script to extend your root file system and that your memory split is set to 192 or 128**. You can run the script with This is a Fork of the original in an attempt to add a video for the screen saver in EmulationStation instead of only "DIM" and "BLACK" All Thanks to the original authors.
 
 ```shell
 sudo raspi-config
@@ -24,7 +24,7 @@ Then you can download the latest RetroPie setup script with
 
 ```shell
 cd
-git clone --depth=1 git://github.com/petrockblog/RetroPie-Setup.git
+git clone --depth=1 git://github.com/smokinpuppy/RetroPie-Setup.git
 ```
 
 The script is executed with 
