@@ -118,8 +118,8 @@ function install_sdl2() {
 
 function install_bin_sdl2() {
     isPlatform "rpi" || fatalError "$mod_id is only available as a binary package for platform rpi"
-    wget "http://www.sharp-vision.net/libsdl2-dev_2.0.3_armhf.deb"
-    wget "http://www.sharp-vision.net/libsdl2_2.0.3_armhf.deb"
+    wget "http://www.rpivpngate.com/downloads/libsdl2-dev_2.0.3_armhf.deb"
+    wget "http://www.rpivpngate.com/downloads/libsdl2_2.0.3_armhf.deb"
     remove_old_sdl2
     # if the packages don't install completely due to missing dependencies the apt-get -y -f install will correct it
     if ! dpkg -i libsdl2_2.0.3_armhf.deb libsdl2-dev_2.0.3_armhf.deb; then
