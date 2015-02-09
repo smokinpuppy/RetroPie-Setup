@@ -11,7 +11,7 @@ function depends_sdl2() {
 }
 
 function sources_sdl2() {
-    wget -O- -q http://downloads.petrockblock.com/retropiearchives/SDL2-2.0.3.tar.gz | tar -xvz
+    wget -O- -q https://www.libsdl.org/release/SDL2-2.0.3.tar.gz | tar -xvz
     cd SDL2-2.0.3
     # we need to add the --host due to dh_auto_configure fiddling with the --build parameter which overrides the config.guess. This
     # would cause it not to find the pi gles development files
